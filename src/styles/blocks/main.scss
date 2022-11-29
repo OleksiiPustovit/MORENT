@@ -1,0 +1,69 @@
+body {
+  background-color: $background-primiry;
+  overflow-x: hidden;
+}
+
+.sidebar {
+  display: flex;
+  width: 360px;
+  background-color: $background-secondary;
+}
+
+.filter {
+  &__input {
+    width: 20px;
+    height: 20px;
+  }
+  &__title {
+    margin: 32px;
+    font-family: $ff-jakarta;
+    font-weight: $fw-600;
+    font-size: 12px;
+    line-height: 18px;
+    letter-spacing: 0.2em;
+    color: $text-color-secondary;
+    text-transform: uppercase;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-top: 28px;
+    margin-left: 34px;
+  }
+  &__text {
+    font-family: $ff-jakarta;
+    font-weight: $fw-600;
+    font-size: 20px;
+    line-height: 30px;
+    color: $text-color-primary;
+    text-transform: none;
+    margin-bottom: 32px;
+    padding-left: 10px;
+
+    &-secondary {
+      font-weight: $fw-400;
+      color: $text-color-secondary;
+      font-size: 20px;
+      line-height: 30px;
+    }
+  }
+  &__label {
+    margin-bottom: 32px;
+  }
+  &__range {
+    margin-bottom: 16px;
+    height: 12px;
+    width: 220px;
+  }
+  &__input-price {
+    border: none;
+    font-family: $ff-jakarta;
+    font-weight: $fw-600;
+    font-size: 20px;
+    line-height: 30px;
+    color: $text-color-primary;
+    text-transform: none;
+    margin-bottom: 32px;
+    padding-left: 10px;
+  }
+}
