@@ -12,13 +12,19 @@
       crossorigin="anonymous"
     >
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
+      crossorigin="anonymous"
+    >
     <link rel="stylesheet" href="styles/main.scss">
   </head>
   <body>
     <header class="header">
       <div class="container">
         <div class="d-flex justify-content-between header__inner">
-          <div class="d-flex justify-content-between header__logo-search">
+          <div class="d-flex justify-content-between flex-md-row header__logo-search">
             <a href="#" class="header__logo">
               <img src="images/logo.svg" alt="logo">
             </a>
@@ -41,7 +47,7 @@
 
             </div>
           </div>
-          <ul class="icons">
+          <ul class="icons d-flex flex-row">
             <li class="icons__item">
               <a href="#" class="icons__link">
                 <img
@@ -82,10 +88,10 @@
       </div>
     </header>
     <main class="main">
-      <div class="container">
+      <div class="container d-flex">
         <sidebar
-          class="sidebar"
-        >
+        class="sidebar"
+      >
           <div class="filter">
             <div class="filter__title">
               <p>Type</p>
@@ -241,6 +247,188 @@
 
           </div>
         </sidebar>
+        <div class="main__content d-flex flex-column">
+          <section class="main-section d-flex flex-row justify-content-between">
+            <div class="main-section__images">
+              <div class="main-section__image-big">
+                <img
+                  src="images/mainNissan.svg"
+                  alt="car"
+                  class="image-big"
+                >
+              </div>
+              <div class="main-section__image-small d-flex justify-content-between">
+                <img
+                  src="images/nissan1.svg"
+                  alt="car"
+                  class="image-small"
+                >
+                <img
+                  src="images/nissan2.svg"
+                  alt="car"
+                  class="image-small"
+                >
+                <img
+                  src="images/nissan3.svg"
+                  alt="car"
+                  class="image-small"
+                >
+              </div>
+            </div>
+            <div class="main-section__description d-flex flex-column">
+              <div class="main-section__description-title d-flex justify-content-between">
+                <h2 class="description-title">
+                  Nissan GT - R
+                </h2>
+                <img
+                  src="images/heart_red.svg"
+                  alt="liked"
+                  class="description-title__image my-auto"
+                >
+              </div>
+              <div class="main-section__description-rating">
+                <img
+                  src="images/Review Star.svg"
+                  alt="rating"
+                  class="stars"
+                >
+                <p class="rating-reviewer">440+ Reviewer</p>
+              </div>
+              <div class="main-section__description-text">
+                NISMO has become the embodiment of Nissan's outstanding performance, inspired by the most unforgiving proving ground, the "race track".
+              </div>
+              <div class="main-section__description-car_characteristics d-flex justify-content-between">
+                <div class="characteristics__title">
+                  Type car
+                </div>
+                <div class="characteristics__type">
+                  Sport
+                </div>
+                <div class="characteristics__title">
+                  Capacity
+                </div>
+                <div class="characteristics__type">
+                  2 Person
+                </div>
+              </div>
+              <div class="main-section__description-car_characteristics d-flex justify-content-between">
+                <div class="characteristics__title">
+                  Steering
+                </div>
+                <div class="characteristics__type">
+                  Manual
+                </div>
+                <div class="characteristics__title">
+                  Gasoline
+                </div>
+                <div class="characteristics__type">
+                  70L
+                </div>
+              </div>
+
+              <div class="main-section__description-rent d-flex justify-content-between">
+                <div class="main-section__description-price">
+                  <h2 class="discount-cost">
+                    $80.00/ <span class="discount-cost-days">days</span>
+                  </h2>
+                  <p class="full-cost">
+                    $100.00
+                  </p>
+                </div>
+                <button
+                  type="button"
+                  class="button btn btn-primary"
+                >Rent Now</button>
+              </div>
+            </div>
+          </section>
+          <section class="review d-flex flex-column">
+            <div class="review__content">
+              <h2 class="review__content-title">
+                Review
+                <span class="badge bg-primary text-white review__content-title-count">13</span>
+              </h2>
+              <div class="user">
+                <div class="review__user d-flex justify-content-between">
+                  <div class="review__user-info d-flex">
+                    <img
+                    class="review__user-photo"
+                      src="images/Profil.svg"
+                      alt="user photo"
+                    >
+                    <div class="d-flex flex-column">
+                      <h2 class="review__user-name">Alex Stanton</h2>
+                      <span class="review__user-position">CEO at Bukalapak</span>
+                    </div>
+                  </div>
+                  <div class="review__user-rating">
+                    <p class="review__user-date">
+                      21 July 2022
+                    </p>
+                    <img
+                      src="images/Review Star.svg"
+                      alt="rating"
+                      class="stars"
+                    >
+                  </div>
+                </div>
+                <div class="review__user-message">
+                  <p class="review__user-text">
+                    We are very happy with the service from the MORENT App. Morent has a low price and also a large variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
+                  </p>
+                </div>
+              </div>
+              <div class="user">
+                <div class="review__user d-flex justify-content-between">
+                  <div class="review__user-info d-flex">
+                    <img
+                    class="review__user-photo"
+                      src="images/Profill2.svg"
+                      alt="user photo"
+                    >
+                    <div class="d-flex flex-column">
+                      <h2 class="review__user-name">Skylar Dias</h2>
+                      <span class="review__user-position">CEO at Amazon</span>
+                    </div>
+                  </div>
+                  <div class="review__user-rating">
+                    <p class="review__user-date">
+                      20 July 2022
+                    </p>
+                    <img
+                      src="images/Review Star.svg"
+                      alt="rating"
+                      class="stars"
+                    >
+                  </div>
+                </div>
+                <div class="review__user-message">
+                  <p class="review__user-text">
+                    We are greatly helped by the services of the MORENT Application. Morent has low prices and also a wide variety of cars with good and comfortable facilities. In addition, the service provided by the officers is also very friendly and very polite.
+                  </p>
+                </div>
+              </div>
+              <div class="text-center mt-2">
+                <button
+                  class="btn d-inline-block text-center text-secondary"
+                  type="button"
+                  data-toggle="collapse"
+                  data-target="#collapseExample"
+                  aria-expanded="false"
+                  aria-controls="collapseExample"
+                >
+                  Show All
+                  <img
+                    src="images/arrow-down.svg"
+                    alt="show all"
+                    class="arrow-down"
+                  >
+                </button>
+              </div>
+
+            </div>
+          </section>
+        </div>
       </div>
     </main>
     <footer class="footer">

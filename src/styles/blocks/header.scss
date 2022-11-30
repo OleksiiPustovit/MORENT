@@ -4,8 +4,6 @@
   border-bottom: 1px solid $border-color;
 
   &__inner {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     padding: 40px;
     max-width: 1440px;
@@ -14,13 +12,8 @@
     background-color: $background-secondary;
   }
   &__logo-search {
-    display: flex;
-    justify-content: space-between;
     @include phone {
       flex-direction: column;
-    }
-    @include pad {
-      flex-direction: row;
     }
   }
   &__logo {
@@ -70,11 +63,10 @@
   height: 100%;
   background-color: $background-primiry;
   margin: 0 auto;
+  padding: 0;
 }
 
 .icons {
-  display: flex;
-  flex-direction: row;
   &__item {
     margin: 0 10px;
     width: 44px;
@@ -97,6 +89,5 @@
   &__image {
     width: 17px;
     height: 17px;
-
   }
 }
