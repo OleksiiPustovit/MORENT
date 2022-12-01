@@ -6,6 +6,9 @@
     @include phone {
       flex-direction: column;
     }
+    @include pad {
+      flex-direction: row;
+    }
   }
 
   &__container {
@@ -51,7 +54,6 @@
     }
     @include pad {
       flex-direction: row;
-      margin-bottom: 60px;
     }
     @include desktop {
       flex-direction: row;
@@ -63,6 +65,7 @@
     }
     @include pad {
       margin-bottom: 60px;
+      margin-right: 60px;
     }
   }
   &__community {
@@ -71,6 +74,7 @@
     }
     @include pad {
       margin-bottom: 60px;
+      margin-right: 60px;
     }
   }
 
