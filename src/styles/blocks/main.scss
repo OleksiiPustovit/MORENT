@@ -1,34 +1,70 @@
 .main {
   height: 100%;
   &__content {
-    margin: 32px;
+    margin: 0 auto;
+    margin-top: 32px;
+    margin-bottom: 32px;
   }
   &-section {
+    @include  phone {
+      flex-direction: column;
+    }
+    @include pad {
+      flex-direction: row;
+    }
     &__image {
       &-big {
         margin-bottom: 24px;
+        @include phone {
+          width: 327px;
+        }
+        @include pad {
+          width: 492px;
+        }
       }
       &-small {
         width: 492px;
         height: 124px;
+        @include phone {
+          width: 327px;
+          height: 58px;
+          margin-bottom: 32px;
+        }
       }
     }
 
     &__description {
-      width: 492px;
       height: max-content;
       margin-left: 32px;
       padding: 24px;
       background-color: $background-secondary;
       border-radius: 10px;
 
+      @include phone {
+        width: 327px;
+        margin: 0;
+      }
+
+      @include pad {
+        margin-left: 32px;
+        width: 492px;
+      }
+
       &-text {
         margin-top: 20px;
         font-family: $ff-jakarta;
         font-weight: $fw-400;
-        font-size: 18px;
-        line-height: 40px;
+
         color: $text-color-primary;
+
+        @include phone {
+          font-size: 12px;
+          line-height: 24px;
+        }
+        @include pad {
+          font-size: 18px;
+          line-height: 40px;
+        }
       }
       &-car_characteristics {
         margin-top: 25px;
@@ -41,8 +77,15 @@
 }
 
 .stars {
-  width: 108px;
-  height: 20px;
+  @include phone {
+    width: 72px;
+    height: 14px;
+  }
+
+  @include pad {
+    width: 108px;
+    height: 20px;
+  }
 }
 
 .rating-reviewer {
@@ -60,8 +103,15 @@
   font-family: $ff-jakarta;
   font-weight: $fw-700;
   color: $color-black;
-  font-size: 32px;
-  line-height: 48px;
+  @include phone {
+    font-size: 20px;
+    line-height: 38px;
+  }
+
+  @include pad {
+    font-size: 32px;
+    line-height: 48px;
+  }
 
   &__image {
     width: 20px;
@@ -71,49 +121,91 @@
 }
 
 .image-small {
-  width: 148px;
-  height: 124px;
+  @include phone {
+    width: 96px;
+    height: 64px;
+  }
+  @include pad {
+    width: 148px;
+    height: 124px;
+  }
 }
 
 .characteristics {
   &__title {
     font-family: $ff-jakarta;
     font-weight: $fw-400;
-    font-size: 20px;
-    line-height: 26px;
     color: $text-color-secondary;
+
+    @include phone {
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    @include pad {
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 
   &__type {
     font-family: $ff-jakarta;
     font-weight: $fw-600;
-    font-size: 20px;
-    line-height: 26px;
+    @include phone {
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    @include pad {
+      font-size: 20px;
+      line-height: 26px;
+    }
   }
 }
 
 .discount-cost {
   font-family: $ff-jakarta;
   font-weight: $fw-700;
-  font-size: 28px;
-  line-height: 36px;
   color: $color-black;
+  @include phone {
+    font-size: 20px;
+    line-height: 24px;
+  }
+
+  @include pad {
+    font-size: 28px;
+    line-height: 36px;
+  }
   &-days {
     font-family: $ff-jakarta;
     font-weight: $fw-700;
     color: $text-color-secondary;
-    font-size: 16px;
-    line-height: 20px;
+
+    @include phone {
+      font-size: 12px;
+      line-height: 15px;
+    }
+    @include pad {
+      font-size: 16px;
+      line-height: 20px;
+    }
   }
 }
 
 .full-cost {
   font-family: $ff-jakarta;
   font-weight: $fw-700;
-  font-size: 16px;
-  line-height: 20px;
   color: $text-color-secondary;
   text-decoration-line: line-through;
+
+  @include phone {
+    font-size: 12px;
+    line-height: 15px;
+  }
+  @include pad {
+    font-size: 16px;
+    line-height: 20px;
+  }
 }
 
 .button {
@@ -125,6 +217,13 @@
   margin-top: 32px;
   background-color: $background-secondary;
   width: 1016px;
+
+  @include phone {
+    width: 327px;
+  }
+  @include pad {
+    width: 1016px;
+  }
 
   &__content {
     padding: 24px;
@@ -141,24 +240,46 @@
   &__user {
     margin-top: 32px;
     &-photo {
-      width: 56px;
-      height: 56px;
+      @include phone {
+        width: 44px;
+        height: 44px;
+      }
+      @include pad {
+        width: 56px;
+        height: 56px;
+      }
     }
     &-name {
       font-family: $ff-jakarta;
       font-weight: $fw-700;
-      font-size: 20px;
-      line-height: 26px;
       color: $color-black;
       padding-left: 16px;
+
+      @include phone {
+        font-size: 16px;
+        line-height: 20px;
+      }
+
+      @include pad {
+        font-size: 20px;
+        line-height: 26px;
+      }
     }
     &-position {
       font-family: $ff-jakarta;
       font-weight: $fw-400;
-      font-size: 16px;
-      line-height: 20px;
       color: $text-color-secondary;
       padding-left: 16px;
+
+      @include phone {
+        font-size: 12px;
+        line-height: 15px;
+      }
+
+      @include pad {
+        font-size: 16px;
+        line-height: 20px;
+      }
     }
     &-date {
       margin: 0;
@@ -176,6 +297,11 @@
       font-size: 14px;
       line-height: 28px;
       color: $text-color-primary;
+
+      @include phone {
+        font-size: 12px;
+        line-height: 24px;
+      }
     }
   }
 }
@@ -188,6 +314,12 @@
 
 .recent-car {
   margin-top: 42px;
+  @include phone {
+    width: 327px;
+  }
+  @include pad {
+    width: 1016px;
+  }
 
   &__text-block {
     padding: 20px;
@@ -197,6 +329,7 @@
     font-weight: $fw-600;
     font-size: 16px;
     color: $text-color-secondary;
+    align-self: center;
   }
   &__btn {
     font-family: $ff-jakarta;

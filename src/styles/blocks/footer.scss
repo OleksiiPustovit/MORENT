@@ -1,12 +1,26 @@
 .footer {
   width: 100vw;
   background-color: $background-secondary;
+
+  &__inner-container {
+    @include phone {
+      flex-direction: column;
+    }
+  }
+
   &__container {
-    padding: 40px;
     max-width: 1440px;
     height: 480px;
     margin: 0 auto;
-    background-color: $background-secondary;
+
+    @include phone {
+      padding: 24px;
+      background-color: $background-primiry;
+    }
+    @include desktop {
+      padding: 80px 60px;
+      background-color: $background-secondary;
+    }
   }
 
   &__list {
@@ -14,51 +28,59 @@
   }
 
   &__logo {
-    display: flex;
-    margin-left: 60px;
-    margin-top: 60px;
     margin-bottom: 16px;
     align-items: center;
     width: 148px;
     height: 44px;
     &-text {
-      margin-left: 60px;
       font-family: $ff-jakarta;
       font-weight: $fw-500;
       font-size: 16px;
       line-height: 32px;
       color: $text-color-primary;
+      @include phone {
+        margin-bottom: 48px;
+      }
     }
   }
-  &__inner-container {
-    display: flex;
-    justify-content: space-between;
-  }
   &__right-block {
-    display: flex;
-    justify-content: space-between;
-    margin-top: 60px;
-    margin-bottom: 60px;
-
     @include phone {
-      flex-direction: column;
+      flex-direction: row;
+      flex-wrap: wrap;
+      margin-bottom: 0;
     }
     @include pad {
       flex-direction: row;
+      margin-bottom: 60px;
     }
     @include desktop {
       flex-direction: row;
     }
   }
   &__about {
-    margin-right: 60px;
+    @include phone {
+      margin-bottom: 32px;
+    }
+    @include pad {
+      margin-bottom: 60px;
+    }
   }
   &__community {
-    margin-right: 60px;
+    @include phone {
+      margin-bottom: 32px;
+    }
+    @include pad {
+      margin-bottom: 60px;
+    }
   }
 
   &__socials {
-    margin-right: 60px;
+    @include phone {
+      margin-bottom: 32px;
+    }
+    @include pad {
+      margin-bottom: 60px;
+    }
   }
 
   &__title {
@@ -88,12 +110,10 @@
     }
   }
   &__bottom {
-    display: flex;
-    justify-content: space-between;
     align-items: center;
     margin-top: 60px;
     @include phone {
-      flex-direction: column;
+      flex-direction: column-reverse;
     }
     @include pad {
       flex-direction: row;
@@ -102,19 +122,13 @@
       flex-direction: row;
     }
 
-    &-right {
-      display: flex;
-      flex-direction: row;
-      margin-right: 40px;
-    }
-
     &-text {
       font-family: $ff-jakarta;
       font-weight: $fw-600;
       font-size: 16px;
       line-height: 32px;
       color: $color-black;
-      margin-left: 60px;
+      margin-right: 20px;
     }
   }
 }

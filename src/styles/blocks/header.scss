@@ -22,13 +22,28 @@
     align-items: center;
     width: 108px;
     height: 40px;
+    @include phone {
+      margin-bottom: 32px;
+    }
+    @include pad {
+      margin-bottom: 0;
+    }
   }
   &__search {
     display: flex;
-    width: 422px;
     border: 1px solid $border-color;
     border-radius: 15px;
     transition: all $transition-time;
+
+    @include phone {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+
+    @include desktop {
+      width: 422px;
+      margin-bottom: 0;
+    }
 
     &:hover {
       border: 1px solid $hover-color;
@@ -67,12 +82,24 @@
 }
 
 .icons {
+  display: none;
+  @include pad {
+    display: flex;
+  }
   &__item {
     margin: 0 10px;
     width: 44px;
     height: 44px;
     border: 1px solid $border-color;
     border-radius: 50%;
+
+    @include phone {
+      display: none;
+    }
+
+    @include pad {
+      display: flex;
+    }
   }
   &__link {
     display: flex;
@@ -81,6 +108,7 @@
     width: 100%;
     height: 100%;
     transition: all $transition-time;
+
     &:hover {
       background-color: $hover-color;
       border-radius: 50%;
