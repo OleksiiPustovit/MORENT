@@ -83,13 +83,15 @@
   @include pad {
     display: none;
   }
+  @include desktop {
+    display: none;
+  }
   &__logo {
     width: 28px;
     height: 28px;
     margin-top: 15px;
   }
 }
-
 
 .container {
   max-width: 1440px;
