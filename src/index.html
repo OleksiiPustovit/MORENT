@@ -18,6 +18,10 @@
       integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi"
       crossorigin="anonymous"
     >
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"
+    >
     <link rel="stylesheet" href="styles/main.scss">
   </head>
   <body>
@@ -425,8 +429,299 @@
                   >
                 </button>
               </div>
+            </div>
+          </section>
+          <section class="recent-car">
+
+            <div class="recent-car__text-block d-flex justify-content-between">
+              <div class="recent-car__title">Recent Car</div>
+              <button class="btn recent-car__btn">View All</button>
+            </div>
+
+            <div class="card-block">
 
             </div>
+            <div class="car-card d-flex justify-content-between">
+              <div class="swiper">
+                <div class="swiper-wrapper d-flex justify-content-between">
+                  <div class="swiper-slide">
+                    <div class="car-card__container">
+                      <div class="car-card__head d-flex justify-content-between">
+                        <h1 class="car-card__title d-flex flex-column">
+                          Koenigsegg
+                          <span class="car-card__subtitle" >
+                            Sport
+                          </span>
+                        </h1>
+                        <img
+                        class="car-card__like"
+                          src="images/heart_red.svg"
+                          alt="liked"
+                        >
+                      </div>
+                      <div class="car-card__body">
+                        <img
+                          src="images/CarKoenigsegg.svg"
+                          alt="car"
+                          class="car-card__img"
+                        >
+                        <img
+                          src="images/Spesificationkoenigsegg.svg"
+                          alt="car specification"
+                          class="car-card__specification"
+                        >
+                      </div>
+
+                      <div class="car-card__rent d-flex justify-content-between">
+                        <div class="car-card__price">
+                          <h2 class="car-card__cost">
+                            $99.00/ <span class="car-card__cost-days">day</span>
+                          </h2>
+                        </div>
+                        <button
+                          type="button"
+                          class="car-card__button btn btn-primary"
+                        >Rent Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="car-card__container">
+                      <div class="car-card__head d-flex justify-content-between">
+                        <h1 class="car-card__title d-flex flex-column">
+                          Nissan GT - R
+                          <span class="car-card__subtitle" >
+                            Sport
+                          </span>
+                        </h1>
+                        <img
+                        class="car-card__like"
+                          src="images/heart_empty.svg"
+                          alt="liked"
+                        >
+                      </div>
+                      <div class="car-card__body">
+                        <img
+                          src="images/CarGTR.svg"
+                          alt="car"
+                          class="car-card__img"
+                        >
+                        <img
+                          src="images/SpesificationGTR.svg"
+                          alt="car specification"
+                          class="car-card__specification"
+                        >
+                      </div>
+
+                      <div class="car-card__rent d-flex justify-content-between">
+                        <div class="car-card__price">
+                          <h2 class="car-card__cost">
+                            $80.00/ <span class="car-card__cost-days">day</span>
+                          </h2>
+                          <p class="car-card__full-price">
+                            $100
+                          </p>
+                        </div>
+                        <button
+                          type="button"
+                          class="car-card__button btn btn-primary"
+                        >Rent Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="car-card__container">
+                      <div class="car-card__head d-flex justify-content-between">
+                        <h1 class="car-card__title d-flex flex-column">
+                          Rolls-Royce
+                          <span class="car-card__subtitle" >
+                            Sport
+                          </span>
+                        </h1>
+                        <img
+                        class="car-card__like"
+                          src="images/heart_empty.svg"
+                          alt="liked"
+                        >
+                      </div>
+                      <div class="car-card__body">
+                        <img
+                          src="images/CarRolls.svg"
+                          alt="car"
+                          class="car-card__img"
+                        >
+                        <img
+                          src="images/SpesificationRols.svg"
+                          alt="car specification"
+                          class="car-card__specification"
+                        >
+                      </div>
+
+                      <div class="car-card__rent d-flex justify-content-between">
+                        <div class="car-card__price">
+                          <h2 class="car-card__cost">
+                            $96.00/ <span class="car-card__cost-days">day</span>
+                          </h2>
+                        </div>
+                        <button
+                          type="button"
+                          class="car-card__button btn btn-primary"
+                        >Rent Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
+          </section>
+          <section class="recent-car">
+
+            <div class="recent-car__text-block d-flex justify-content-between">
+              <div class="recent-car__title">Recomendation Car</div>
+              <button class="btn recent-car__btn">View All</button>
+            </div>
+
+            <div class="card-block">
+
+            </div>
+            <div class="car-card d-flex justify-content-between">
+              <div class="swiper">
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <div class="car-card__container">
+                      <div class="car-card__head d-flex justify-content-between">
+                        <h1 class="car-card__title d-flex flex-column">
+                          All New Rush
+                          <span class="car-card__subtitle" >
+                            SUV
+                          </span>
+                        </h1>
+                        <img
+                        class="car-card__like"
+                          src="images/heart_empty.svg"
+                          alt="liked"
+                        >
+                      </div>
+                      <div class="car-card__body-spec">
+                        <img
+                          src="images/CarAllNew.svg"
+                          alt="car"
+                          class="car-card__img"
+                        >
+                        <img
+                          src="images/SpesificationAllNew.svg"
+                          alt="car specification"
+                          class="car-card__specification-spec"
+                        >
+                      </div>
+
+                      <div class="car-card__rent d-flex justify-content-between">
+                        <div class="car-card__price">
+                          <h2 class="car-card__cost">
+                            $72.00/ <span class="car-card__cost-days">day</span>
+                            <p class="car-card__full-price">
+                              $100
+                            </p>
+                          </h2>
+                        </div>
+                        <button
+                          type="button"
+                          class="car-card__button btn btn-primary"
+                        >Rent Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="car-card__container">
+                      <div class="car-card__head d-flex justify-content-between">
+                        <h1 class="car-card__title d-flex flex-column">
+                          CR  - V
+                          <span class="car-card__subtitle" >
+                            SUV
+                          </span>
+                        </h1>
+                        <img
+                        class="car-card__like"
+                          src="images/heart_red.svg"
+                          alt="liked"
+                        >
+                      </div>
+                      <div class="car-card__body-spec">
+                        <img
+                          src="images/CarCRV.svg"
+                          alt="car"
+                          class="car-card__img car-card__img-spec"
+                        >
+                        <img
+                          src="images/SpesificationGTR.svg"
+                          alt="car specification"
+                          class="car-card__specification-spec"
+                        >
+                      </div>
+
+                      <div class="car-card__rent d-flex justify-content-between">
+                        <div class="car-card__price">
+                          <h2 class="car-card__cost">
+                            $80.00/ <span class="car-card__cost-days">day</span>
+                          </h2>
+                        </div>
+                        <button
+                          type="button"
+                          class="car-card__button btn btn-primary"
+                        >Rent Now</button>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="swiper-slide">
+                    <div class="car-card__container">
+                      <div class="car-card__head d-flex justify-content-between">
+                        <h1 class="car-card__title d-flex flex-column">
+                          All New Terios
+                          <span class="car-card__subtitle" >
+                            SUV
+                          </span>
+                        </h1>
+                        <img
+                        class="car-card__like"
+                          src="images/heart_empty.svg"
+                          alt="liked"
+                        >
+                      </div>
+                      <div class="car-card__body-spec">
+                        <img
+                          src="images/CarTerios.svg"
+                          alt="car"
+                          class="car-card__img"
+                        >
+                        <img
+                          src="images/SpesificationTerios.svg"
+                          alt="car specification"
+                          class="car-card__specification-spec"
+                        >
+                      </div>
+
+                      <div class="car-card__rent d-flex justify-content-between">
+                        <div class="car-card__price">
+                          <h2 class="car-card__cost">
+                            $74.00/ <span class="car-card__cost-days">day</span>
+                          </h2>
+                        </div>
+                        <button
+                          type="button"
+                          class="car-card__button btn btn-primary"
+                        >Rent Now</button>
+                      </div>
+                    </div>
+                  </div>
+
+                </div>
+              </div>
+            </div>
+
+
           </section>
         </div>
       </div>
@@ -552,5 +847,7 @@
       </div>
     </footer>
 
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script src="script/main.js"></script>
   </body>
 </html>

@@ -9,6 +9,10 @@
     background-color: $background-secondary;
   }
 
+  &__list {
+    padding: 0;
+  }
+
   &__logo {
     display: flex;
     margin-left: 60px;

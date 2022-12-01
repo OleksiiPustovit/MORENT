@@ -1,0 +1,74 @@
+.car-card {
+  &__container {
+    width: 317px;
+    height: 388px;
+    background-color: $background-secondary;
+    border-radius: 10px;
+    padding: 24px;
+  }
+
+  &__title {
+    font-family: $ff-jakarta;
+    font-weight: $fw-700;
+    font-size: 20px;
+  }
+  &__like {
+    width: 20px;
+    height: 20px;
+  }
+  &__subtitle {
+    font-family: $ff-jakarta;
+    font-weight: $fw-500;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color-secondary;
+  }
+  &__body {
+    margin-top: 52px;
+    &-spec {
+      margin-top: 38px;
+    }
+  }
+  &__specification {
+    margin-top: 60px;
+    &-spec {
+      margin-top: 38px;
+    }
+  }
+
+  &__rent {
+    margin-top: 40px;
+  }
+  &__cost {
+    font-family: $ff-jakarta;
+    font-weight: $fw-700;
+    font-size: 20px;
+    line-height: 32px;
+    color: $color-black;
+    margin-bottom: 0;
+    &-days {
+      font-family: $ff-jakarta;
+      font-weight: $fw-400;
+      font-size: 14px;
+      line-height: 18px;
+      color: $text-color-secondary;
+    }
+  }
+  &__full-price {
+    font-family: $ff-jakarta;
+    font-weight: $fw-700;
+    font-size: 14px;
+    line-height: 18px;
+    color: $text-color-secondary;
+    text-decoration: line-through;
+    margin-bottom: 0;
+  }
+
+  &__button {
+    width: 116px;
+    height: 44px;
+  }
+  &__img-spec {
+    height: 118px;
+  }
+}

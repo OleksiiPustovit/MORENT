@@ -185,3 +185,23 @@
   height: 24px;
   margin-left: 8px;
 }
+
+.recent-car {
+  margin-top: 42px;
+
+  &__text-block {
+    padding: 20px;
+  }
+  &__title {
+    font-family: $ff-jakarta;
+    font-weight: $fw-600;
+    font-size: 16px;
+    color: $text-color-secondary;
+  }
+  &__btn {
+    font-family: $ff-jakarta;
+    font-weight: $fw-600;
+    font-size: 16px;
+    color: $blue-color;
+  }
+}
