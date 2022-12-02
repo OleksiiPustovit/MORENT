@@ -60,6 +60,7 @@
     }
   }
   &__about {
+    width: 144px;
     @include phone {
       margin-bottom: 32px;
     }
@@ -69,6 +70,7 @@
     }
   }
   &__community {
+    width: 144px;
     @include phone {
       margin-bottom: 32px;
     }
@@ -79,6 +81,7 @@
   }
 
   &__socials {
+    width: 144px;
     @include phone {
       margin-bottom: 32px;
     }

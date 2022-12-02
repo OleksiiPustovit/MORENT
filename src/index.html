@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>MORENT</title>
+    <link rel="icon" href="images/pngwing.com.png">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link
       rel="preconnect"
@@ -103,24 +104,26 @@
             <a href="#" class="header__logo">
               <img src="images/logo.svg" alt="logo">
             </a>
-            <div class="header__search">
-              <button class="header__button-search">
-                <img src="images/search-normal.svg" alt="search">
-              </button>
-              <input
-                type="text"
-                class="header__search-input"
-                placeholder="Search something here"
-              ></input>
+            <form>
+              <div class="header__search">
+                <button class="header__button-search">
+                  <img src="images/search-normal.svg" alt="search">
+                </button>
+                <input
+                  type="text"
+                  class="header__search-input"
+                  placeholder="Search something here"
+                ></input>
 
-              <button
-                class="header__button-filter"
-                type="button"
-              >
-                <img src="images/filter.svg" alt="filter">
-              </button>
-
-            </div>
+                <button
+                  class="header__button-filter"
+                  type="button"
+                  id="filter-btn"
+                >
+                  <img src="images/filter.svg" alt="filter">
+                </button>
+              </div>
+            </form>
           </div>
           <ul class="icons">
             <li class="icons__item">
@@ -128,7 +131,7 @@
                 <img
                   src="images/heart.svg"
                   alt="heart"
-                  class="icons__image"
+                  class="icons__image heart"
                 >
               </a>
             </li>
@@ -166,6 +169,7 @@
       <div class="container d-flex">
         <sidebar
         class="sidebar"
+        id="sidebar"
       >
           <div class="filter">
             <div class="filter__title">
@@ -323,31 +327,64 @@
           </div>
         </sidebar>
         <div class="main__content d-flex flex-column">
+
           <section class="main-section d-flex justify-content-between">
             <div class="main-section__images">
-              <div class="main-section__image-big">
-                <img
-                  src="images/mainNissan.svg"
-                  alt="car"
-                  class="image-big"
+
+              <div class="swipe__container">
+                <div
+                  class="swiper mySwiper2"
                 >
-              </div>
-              <div class="main-section__image-small d-flex justify-content-between">
-                <img
-                  src="images/nissan1.svg"
-                  alt="car"
-                  class="image-small"
-                >
-                <img
-                  src="images/nissan2.svg"
-                  alt="car"
-                  class="image-small"
-                >
-                <img
-                  src="images/nissan3.svg"
-                  alt="car"
-                  class="image-small"
-                >
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper__img"
+                        src="images/Main.svg"
+                        alt="1"
+                      >
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper__img"
+                        src="images/nissan2.svg"
+                        alt="1"
+                      >
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper__img"
+                        src="images/nissan3.svg"
+                        alt="1"
+                      >
+                    </div>
+
+                  </div>
+                </div>
+                <div class="swiper mySwiper">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper__img-small"
+                        src="images/nissan1.svg"
+                        alt="1"
+                      >
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper__img-small"
+                        src="images/nissan2.svg"
+                        alt="1"
+                      >
+                    </div>
+                    <div class="swiper-slide">
+                      <img
+                        class="swiper__img-small"
+                        src="images/nissan3.svg"
+                        alt="1"
+                      >
+                    </div>
+                  </div>
+                </div>
               </div>
             </div>
             <div class="main-section__description d-flex flex-column">
@@ -358,7 +395,7 @@
                 <img
                   src="images/heart_red.svg"
                   alt="liked"
-                  class="description-title__image my-auto"
+                  class="description-title__image my-auto heart"
                 >
               </div>
               <div class="main-section__description-rating">
@@ -525,7 +562,7 @@
                           </span>
                         </h1>
                         <img
-                        class="car-card__like"
+                        class="car-card__like heart"
                           src="images/heart_red.svg"
                           alt="liked"
                         >
@@ -566,7 +603,7 @@
                           </span>
                         </h1>
                         <img
-                        class="car-card__like"
+                        class="car-card__like heart"
                           src="images/heart_empty.svg"
                           alt="liked"
                         >
@@ -610,7 +647,7 @@
                           </span>
                         </h1>
                         <img
-                        class="car-card__like"
+                        class="car-card__like heart"
                           src="images/heart_empty.svg"
                           alt="liked"
                         >
