@@ -21,22 +21,21 @@ document.getElementById('filter-btn').onclick
     document.getElementById('sidebar').classList.toggle('sidebar-active');
   };
 
-// eslint-disable-next-line no-unused-vars
-const swiper1 = new Swiper('.mySwiper', {
+const slider = new Swiper('.gallery-slider', {
+  slidesPerView: 1,
   spaceBetween: 10,
-  slidesPerView: 3,
-  freeMode: true,
+  centeredSlides: true,
+  loop: true,
+  loopedSlides: 1,
 });
 
-// eslint-disable-next-line no-unused-vars
-const swiper2 = new Swiper('.mySwiper2', {
+const thumbs = new Swiper('.gallery-thumbs', {
+  slidesPerView: 3,
   spaceBetween: 10,
-  slidesPerView: 1,
-  navigation: {
-    nextEl: '.swiper-button-next',
-    prevEl: '.swiper-button-prev',
-  },
-  thumbs: {
-    swiper: swiper,
-  },
+  centeredSlides: true,
+  loop: true,
+  slideToClickedSlide: true,
 });
+
+slider.controller.control = thumbs;
+thumbs.controller.control = slider;

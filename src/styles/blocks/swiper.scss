@@ -1,5 +1,4 @@
 .swipe__container {
-
   @include phone {
     width: 327px;
   }
@@ -8,81 +7,53 @@
   }
 }
 
-.swiper {
+.gallery {
   width: 100%;
-  height: 100%;
-  margin-left: auto;
-  margin-right: auto;
-  &__img {
-    object-fit: cover;
-    border-radius: 15px;
-    @include phone {
-      width: 327px;
-      height: 327px;
-    }
-    @include desktop {
-      width: 492px;
-      height: 360px;
-    }
-    &-small {
-      @include phone {
-        width: 96px;
-        height: 64px;
-      }
-      @include desktop {
-        width: 148px;
-        height: 124px;
-      }
-    }
-  }
-}
-
-.swiper-slide {
-  text-align: center;
-  font-size: 18px;
-  background: #fff;
-  margin-bottom: 20px;
-
-  display: flex -webkit-flex -ms-flexbox -webkit-box;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-
-  background-size: cover;
-  background-position: center;
-
-  width: 100%;
-  height: 360px;
-  object-fit: cover;
+  margin: 0 auto;
 
   @include phone {
-    height: 327px;
+    width: 327px;
   }
-  @include desktop {
-    height: 360px;
+  @include pad {
+    width: 492px;
   }
-}
 
-.mySwiper2 {
-  height: 80%;
-}
+  &-slider {
+    width: 100%;
+    height: auto;
+    margin: 0 auto;
+    overflow: hidden;
+    margin-bottom: 10px;
 
-.mySwiper {
-  height: 20%;
-  box-sizing: border-box;
-  padding: 10px 0;
-}
+    .swiper-slide {
+      width: auto;
+      height: 100%;
+      overflow: hidden;
 
-.mySwiper .swiper-slide {
-  width: 25%;
-  height: 100%;
-}
+      img {
+        display: block;
+        width: 100%;
+        height: 100%;
+        margin: 0 auto;
+      }
+    }
+  }
 
-.mySwiper .swiper-slide-thumb-active {
-  opacity: 1;
+  &-thumbs {
+    width: 100%;
+    padding: 0;
+    overflow: hidden;
+
+    .swiper-slide {
+      width: 100px;
+      height: 100px;
+      text-align: center;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: 100%;
+      }
+    }
+  }
 }
