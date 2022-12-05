@@ -16,6 +16,12 @@
 .filter {
   width: 360px;
   padding: 32px;
+  @include pad {
+    width: 360px;
+  }
+  @include desktop {
+    width: 360px;
+  }
   &__input {
     width: 20px;
     height: 20px;

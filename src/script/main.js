@@ -1,5 +1,4 @@
 import Swiper from 'swiper';
-// import 'swiper/swiper-bundle.css';
 
 // eslint-disable-next-line no-unused-vars
 const swiper = new Swiper('.swiper', {
@@ -9,6 +8,10 @@ const swiper = new Swiper('.swiper', {
   breakpoints: {
     1025: {
       slidesPerView: 3,
+    },
+    768: {
+      slidesPerView: 2,
+      spaceBetween: 16,
     },
     200: {
       slidesPerView: 1,
@@ -37,5 +40,5 @@ const thumbs = new Swiper('.gallery-thumbs', {
   slideToClickedSlide: true,
 });
 
-slider.controller.control = thumbs;
-thumbs.controller.control = slider;
+slider.params.control = thumbs;
+thumbs.params.control = slider;
