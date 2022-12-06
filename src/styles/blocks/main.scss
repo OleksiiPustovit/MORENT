@@ -10,6 +10,9 @@
       flex-direction: column;
     }
     @include pad {
+      flex-direction: column;
+    }
+    @include desktop {
       flex-direction: row;
     }
     &__image {
@@ -46,7 +49,7 @@
       }
 
       @include pad {
-        margin-left: 32px;
+        margin-left: 10px;
         width: 492px;
       }
 
@@ -223,7 +226,12 @@
     width: 327px;
   }
   @include pad {
+    width: 492px;
+    margin-left: 10px;
+  }
+  @include desktop {
     width: 1016px;
+    margin-left: 0;
   }
 
   &__content {
@@ -319,6 +327,10 @@
     width: 327px;
   }
   @include pad {
+    width: 492px;
+    margin-left: 10px;
+  }
+  @include desktop {
     width: 1016px;
   }
 

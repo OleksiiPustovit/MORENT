@@ -2,8 +2,13 @@
   @include phone {
     width: 327px;
   }
+  @include pad {
+    margin-left: 10px;
+    margin-bottom: 32px;
+  }
   @include desktop {
     width: 492px;
+    margin: 0;
   }
 }
 
@@ -55,5 +60,23 @@
         height: 100%;
       }
     }
+  }
+}
+
+.swiper-slide-duplicate-prev {
+  @include phone {
+    opacity: .6;
+  }
+  @include desktop {
+    opacity: 1;
+  }
+}
+
+.swiper-slide-next {
+  @include phone {
+    opacity: .6;
+  }
+  @include desktop {
+    opacity: 1;
   }
 }

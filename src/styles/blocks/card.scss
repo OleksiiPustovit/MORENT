@@ -1,11 +1,16 @@
 .car-card {
   &__container {
-    width: 317px;
-    height: 388px;
     background-color: $background-secondary;
     border-radius: 10px;
-    padding: 24px;
 
+    @include phone {
+      padding: 12px;
+      height: 334px;
+    }
+    @include pad {
+      padding: 24px;
+      height: 388px;
+    }
   }
 
   &__title {
@@ -24,12 +29,6 @@
     line-height: 18px;
     color: $text-color-secondary;
   }
-  &__body {
-    margin-top: 52px;
-    &-spec {
-      margin-top: 38px;
-    }
-  }
   &__specification {
     margin-top: 60px;
     &-spec {
@@ -43,10 +42,18 @@
   &__cost {
     font-family: $ff-jakarta;
     font-weight: $fw-700;
-    font-size: 20px;
-    line-height: 32px;
     color: $color-black;
     margin-bottom: 0;
+
+    @include phone {
+      font-size: 12px;
+      line-height: 24px;
+    }
+
+    @include pad {
+      font-size: 20px;
+      line-height: 32px;
+    }
     &-days {
       font-family: $ff-jakarta;
       font-weight: $fw-400;
@@ -68,8 +75,21 @@
   &__button {
     width: 116px;
     height: 44px;
+
+    @include phone {
+      width: 100px;
+    }
+  }
+  &__img {
+    @include phone {
+      padding-bottom: 34px;
+    }
   }
   &__img-spec {
     height: 118px;
+    @include pad {
+      margin-bottom: 38px;
+    }
   }
 }
+

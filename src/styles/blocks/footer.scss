@@ -13,12 +13,16 @@
 
   &__container {
     max-width: 1440px;
-    height: 480px;
+    height: 100%;
     margin: 0 auto;
 
     @include phone {
       padding: 24px;
       background-color: $background-primiry;
+    }
+    @include pad {
+      padding: 32px;
+      background-color: $background-secondary;
     }
     @include desktop {
       padding: 80px 60px;
